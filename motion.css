@@ -2,3 +2,23 @@
 @media(max-width:1000px){.journey-row{gap:4%;grid-template-columns:1fr 1.2fr}.journey-text h3{font-size:25px}.stage-media img{height:195px}.double-reel video{height:200px}.university-media img{height:190px}.motion-quote{padding:30px 7%;grid-template-columns:1fr 150px}.motion-quote blockquote{font-size:24px}.hero-reel{width:110px;right:15px}.hero-reel video{height:158px}}
 @media(max-width:700px){header .brand small{font-size:6px}header .motion-toggle{font-size:9px;padding:7px 10px}.hero-reel{bottom:38px;right:15px;width:105px}.hero-reel video{height:146px}.hero-reel span{font-size:6px;padding:4px 2px}.compact .hero-image{height:350px}.journey-row{grid-template-columns:1fr;gap:18px;padding:24px 0}.journey-row.reverse .journey-text,.journey-row.reverse .stage-media{order:initial}.journey-text h3{font-size:25px}.journey-text ul{font-size:11px;margin-top:12px}.journey-text .role{font-size:10px}.school-media{grid-template-columns:.85fr 1.2fr}.school-media img{height:175px}.school-media .photo-button:last-child img{height:150px}.university-media{grid-template-columns:1.2fr 1fr}.double-reel video{height:190px}.university-media img{height:185px}.graduate-media img{height:235px;object-position:center 62%}.motion-quote{grid-template-columns:1fr 100px;padding:26px 7%;gap:18px}.motion-quote blockquote{font-size:20px;line-height:1.35}.motion-quote .eyebrow{font-size:7px}.quote-reel video{height:190px}.quote-author{font-size:7px}.archive-strip{grid-template-columns:1fr;gap:20px}.archive-copy h2{font-size:32px}.archive-media video{height:190px}.archive-media img{height:150px}.archive-copy .text-button{margin-top:7px}header nav{margin:0}}
 .stage-media.graduate-media img{height:330px;object-position:center 55%}#lightbox-image{width:100%;height:auto;max-height:75vh;object-fit:contain}@media(max-width:700px){.stage-media.graduate-media img{height:260px;object-position:center 58%}}
+/* Wider desktop media, with the university chapter led by game footage. */
+@media(min-width:1001px){
+  .hero-reel{width:clamp(180px,14vw,250px);right:28px}
+  .hero-reel video{height:auto;aspect-ratio:956/1482;object-fit:contain}
+  .hero-reel span{font-size:8px;padding:8px 4px}
+  .journey-row.reverse{grid-template-columns:minmax(0,1.65fr) minmax(280px,.9fr);gap:4%}
+  .university-media{grid-template-columns:1.5fr .9fr;gap:16px}
+  .double-reel{gap:12px}
+  .double-reel video{height:clamp(340px,26vw,460px);object-fit:contain}
+  .university-media img{height:clamp(300px,24vw,420px)}
+  .journey-row.reverse .journey-text h3{font-size:clamp(30px,2.5vw,42px)}
+  .journey-row.reverse .journey-text .role{font-size:12px;line-height:1.8}
+  .journey-row.reverse .journey-text ul{font-size:13px;line-height:1.9;margin-top:20px}
+  .motion-quote{grid-template-columns:minmax(0,1fr) clamp(220px,17vw,290px);gap:6%}
+  .quote-reel video{height:clamp(300px,24vw,400px);object-fit:contain}
+  .archive-strip{grid-template-columns:.65fr 1.65fr;gap:5%}
+  .archive-media{gap:16px}
+  .archive-media video{height:clamp(300px,24vw,400px);object-fit:contain}
+  .archive-media img{height:clamp(230px,20vw,310px)}
+}
