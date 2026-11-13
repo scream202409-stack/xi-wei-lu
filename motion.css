@@ -22,3 +22,15 @@
   .archive-media video{height:clamp(300px,24vw,400px);object-fit:contain}
   .archive-media img{height:clamp(230px,20vw,310px)}
 }
+/* Make individual honors and team results clear at a glance. */
+.journey-text .honors-list{margin:22px 0 0;padding:0;list-style:none}
+.journey-text .honors-list li{padding:14px 0;border-top:1px solid var(--line);line-height:1.45}
+.journey-text .honors-list strong{display:block;font-size:clamp(23px,1.8vw,30px);line-height:1.2;color:var(--wine);font-weight:600;letter-spacing:-.02em}
+.journey-text .honors-list span{display:block;margin-top:7px;font-size:15px;line-height:1.55;color:var(--ink)}
+.journey-text .honors-list small{display:block;margin-top:6px;font-size:12px;line-height:1.55;color:#5f655d}
+.journey-text .honors-list .featured-honor{padding:18px;background:#ebe3da;border-top:0;border-left:3px solid var(--wine);margin-bottom:14px}
+.journey-text .honors-list .featured-honor strong{font-size:clamp(25px,2vw,33px)}
+.journey-text .honors-list .press-link{display:block}
+.stage-media .photo-button>span{font-size:10px;line-height:1.5}
+@media(min-width:1001px){.school-media{grid-template-columns:1fr 1.05fr}.school-media .photo-button:first-child img{height:clamp(260px,23vw,360px)}.school-media .photo-button:last-child img{height:clamp(230px,18vw,285px)}}
+@media(max-width:700px){.journey-text .honors-list{margin-top:18px}.journey-text .honors-list strong{font-size:23px}.journey-text .honors-list span{font-size:14px}.journey-text .honors-list small{font-size:12px}.journey-text .honors-list .featured-honor strong{font-size:25px}.stage-media .photo-button>span{font-size:9px}}
